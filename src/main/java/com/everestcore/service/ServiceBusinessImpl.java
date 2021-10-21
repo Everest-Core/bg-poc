@@ -12,7 +12,7 @@ public class ServiceBusinessImpl  implements ISeviceBusiness{
     public ResponseData getMsj(String param){
         String msj="Usuario Ingresado: ";
 
-        log.info("Entrando el bean de servicio");
+        log.info("Entrando el bean de servicio correccion. FIX");
         log.info("Regresando mensaje");
         ResponseData data=new ResponseData();
         data.setStatusCode("01");
