@@ -28,7 +28,8 @@ public class TestController {
     @ResponseBody
     public ResponseEntity<ResponseData> validate(@RequestBody UserDTO request, @RequestHeader Map<String, String> headers) {
 
-        log.info("Peticion en controllador, llamada desde microservicio - cambio feature branch "+request.getPartyId());
+        log.info("Peticion en controllador, llamada desde microservicio "+request.getPartyId());
+        log.info("probando el hotfix desde el tagv1.0 "+request.getPartyId());
         return new ResponseEntity<>(service.getMsj(request.getPartyId()), HttpStatus.OK);
     }
 }
