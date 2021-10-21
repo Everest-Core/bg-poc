@@ -31,7 +31,6 @@ public class TestController {
         log.info("Peticion en controllador, llamada desde microservicio "+request.getPartyId());
         log.info("Peticion en controllador, llamada desde microservicio hotfix "+request.getPartyId());
         log.info("Peticion en controllador, llamada desde microservicio hotfix 2"+request.getPartyId());
-        
         return new ResponseEntity<>(service.getMsj(request.getPartyId()), HttpStatus.OK);
     }
 }
